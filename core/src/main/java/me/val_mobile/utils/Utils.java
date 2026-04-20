@@ -52,6 +52,9 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.EulerAngle;
 import org.bukkit.util.Vector;
+import static org.bukkit.attribute.Attribute.*;
+import static org.bukkit.block.Biome.*;
+
 
 import javax.annotation.Nonnegative;
 import javax.annotation.Nonnull;
@@ -285,28 +288,28 @@ public class Utils {
     @Nonnull
     public static String toLowercaseAttributeName(@Nonnull Attribute atr) {
         return switch (atr) {
-            case GENERIC_ATTACK_DAMAGE -> "generic.attack_damage";
-            case GENERIC_ATTACK_SPEED -> "generic.attack_speed";
-            case GENERIC_ATTACK_KNOCKBACK -> "generic.attack_knockback";
-            case GENERIC_ARMOR -> "generic.armor";
-            case GENERIC_ARMOR_TOUGHNESS -> "generic.armor_toughness";
-            case GENERIC_FLYING_SPEED -> "generic.flying_speed";
-            case GENERIC_FOLLOW_RANGE -> "generic.follow_range";
-            case GENERIC_KNOCKBACK_RESISTANCE -> "generic.knockback_resistance";
-            case GENERIC_LUCK -> "generic.luck";
-            case GENERIC_MAX_HEALTH -> "generic.max_health";
-            case GENERIC_MOVEMENT_SPEED -> "generic.movement_speed";
-            case GENERIC_JUMP_STRENGTH -> "horse.jump_strength";
-            case ZOMBIE_SPAWN_REINFORCEMENTS -> "zombie.spawn_reinforcements";
+            case ATTACK_DAMAGE -> "generic.attack_damage";
+            case ATTACK_SPEED -> "generic.attack_speed";
+            case ATTACK_KNOCKBACK -> "generic.attack_knockback";
+            case ARMOR -> "generic.armor";
+            case ARMOR_TOUGHNESS -> "generic.armor_toughness";
+            case FLYING_SPEED -> "generic.flying_speed";
+            case FOLLOW_RANGE -> "generic.follow_range";
+            case KNOCKBACK_RESISTANCE -> "generic.knockback_resistance";
+            case LUCK -> "generic.luck";
+            case MAX_HEALTH -> "generic.max_health";
+            case MOVEMENT_SPEED -> "generic.movement_speed";
+            case JUMP_STRENGTH -> "horse.jump_strength";
+            case ZOMBIE_REINFORCEMENTS -> "zombie.spawn_reinforcements";
             default -> atr.name().toLowerCase().replace("_", ".");
         };
     }
 
     public static double getCorrectAttributeValue(@Nonnull Attribute attribute, double requestedValue) {
         return switch (attribute) {
-            case GENERIC_ATTACK_DAMAGE -> requestedValue + ATTACK_DAMAGE_CONSTANT;
-            case GENERIC_ATTACK_SPEED -> requestedValue + ATTACK_SPEED_CONSTANT;
-            case GENERIC_ARMOR, GENERIC_ARMOR_TOUGHNESS -> requestedValue;
+            case ATTACK_DAMAGE -> requestedValue + ATTACK_DAMAGE_CONSTANT;
+            case ATTACK_SPEED -> requestedValue + ATTACK_SPEED_CONSTANT;
+            case ARMOR, ARMOR_TOUGHNESS -> requestedValue;
             default -> 0;
         };
     }
@@ -369,7 +372,7 @@ public class Utils {
             if (meta != null) {
                 if (meta.hasAttributeModifiers() && meta.hasLore()) {
                     List<String> lore = meta.getLore();
-                    Collection<AttributeModifier> modifiers = meta.getAttributeModifiers(Attribute.GENERIC_ATTACK_DAMAGE);
+                    Collection<AttributeModifier> modifiers = meta.getAttributeModifiers(Attribute.ATTACK_DAMAGE);
 
                     if (!(modifiers == null || modifiers.isEmpty() || lore == null)) {
                         int lvl = 0;
@@ -406,7 +409,7 @@ public class Utils {
 
                         if (index != -1) {
                             List<String> before = new ArrayList<>(lore.subList(0, index));
-                            LorePresets.addGearStats(before, Attribute.GENERIC_ATTACK_DAMAGE, newDmg);
+                            LorePresets.addGearStats(before, Attribute.ATTACK_DAMAGE, newDmg);
 
                             if (index + 1 < len) {
                                 before.addAll(lore.subList(index + 1, lore.size()));
@@ -424,10 +427,10 @@ public class Utils {
     @Nullable
     public static EquipmentSlot getCorrectEquipmentSlot(@Nonnull Attribute attribute, @Nonnull Material material) {
         switch (attribute) {
-            case GENERIC_ATTACK_DAMAGE, GENERIC_ATTACK_SPEED -> {
+            case ATTACK_DAMAGE, ATTACK_SPEED -> {
                 return EquipmentSlot.HAND;
             }
-            case GENERIC_ARMOR, GENERIC_ARMOR_TOUGHNESS -> {
+            case ARMOR, ARMOR_TOUGHNESS -> {
                 if (isHelmet(material)) {
                     return EquipmentSlot.HEAD;
                 }
@@ -449,19 +452,19 @@ public class Utils {
     @Nonnull
     public static Attribute translateInformalAttributeName(@Nonnull String name) {
         return switch (name) {
-            case "AttackDamage" -> Attribute.GENERIC_ATTACK_DAMAGE;
-            case "AttackKnockback" -> Attribute.GENERIC_ATTACK_KNOCKBACK;
-            case "AttackSpeed" -> Attribute.GENERIC_ATTACK_SPEED;
-            case "Armor" -> Attribute.GENERIC_ARMOR;
-            case "Toughness" -> Attribute.GENERIC_ARMOR_TOUGHNESS;
-            case "FlyingSpeed" -> Attribute.GENERIC_FLYING_SPEED;
-            case "FollowRange" -> Attribute.GENERIC_FOLLOW_RANGE;
-            case "KnockbackResistance" -> Attribute.GENERIC_KNOCKBACK_RESISTANCE;
-            case "Luck" -> Attribute.GENERIC_LUCK;
-            case "MaxHealth" -> Attribute.GENERIC_MAX_HEALTH;
-            case "MovementSpeed" -> Attribute.GENERIC_MOVEMENT_SPEED;
-            case "HorseJumpStrength" -> Attribute.GENERIC_JUMP_STRENGTH;
-            case "ZombieSpawnReinforcements" -> Attribute.ZOMBIE_SPAWN_REINFORCEMENTS;
+            case "AttackDamage" -> Attribute.ATTACK_DAMAGE;
+            case "AttackKnockback" -> Attribute.ATTACK_KNOCKBACK;
+            case "AttackSpeed" -> Attribute.ATTACK_SPEED;
+            case "Armor" -> Attribute.ARMOR;
+            case "Toughness" -> Attribute.ARMOR_TOUGHNESS;
+            case "FlyingSpeed" -> Attribute.FLYING_SPEED;
+            case "FollowRange" -> Attribute.FOLLOW_RANGE;
+            case "KnockbackResistance" -> Attribute.KNOCKBACK_RESISTANCE;
+            case "Luck" -> Attribute.LUCK;
+            case "MaxHealth" -> Attribute.MAX_HEALTH;
+            case "MovementSpeed" -> Attribute.MOVEMENT_SPEED;
+            case "HorseJumpStrength" -> Attribute.JUMP_STRENGTH;
+            case "ZombieSpawnReinforcements" -> Attribute.SPAWN_REINFORCEMENTS;
             default -> Attribute.valueOf(name);
         };
     }
@@ -599,8 +602,8 @@ public class Utils {
         int epf = 0;
 
         if (entity instanceof LivingEntity living) {
-            AttributeInstance armor = living.getAttribute(Attribute.GENERIC_ARMOR);
-            AttributeInstance armorToughness = living.getAttribute(Attribute.GENERIC_ARMOR_TOUGHNESS);
+            AttributeInstance armor = living.getAttribute(Attribute.ARMOR);
+            AttributeInstance armorToughness = living.getAttribute(Attribute.ARMOR_TOUGHNESS);
             EntityEquipment equipment = living.getEquipment();
 
             if (armor != null) {

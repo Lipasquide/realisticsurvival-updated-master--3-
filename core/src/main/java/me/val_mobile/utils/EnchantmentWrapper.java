@@ -1,10 +1,14 @@
 package me.val_mobile.utils;
+
 import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.enchantments.EnchantmentTarget;
 import org.bukkit.inventory.ItemStack;
 import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nonnull;
+import org.jetbrains.annotations.Nullable;
+
+
 public class EnchantmentWrapper extends Enchantment {
     protected final String name;
     protected final int maxLvl;
@@ -21,9 +25,13 @@ public class EnchantmentWrapper extends Enchantment {
     @Override public boolean isCursed() { return false; }
     @Override public boolean conflictsWith(@Nonnull Enchantment other) { return false; }
     @Override public boolean canEnchantItem(@Nonnull ItemStack item) { return true; }
-    @Override @NotNull public NamespacedKey getKey() { return key; }
+    @Override @NotNull public NamespacedKey getKey() { return key; } @Override @NotNull public NamespacedKey getKeyOrThrow() { return key; }
+    @Override @NotNull public NamespacedKey getKeyOrThrow() { return key; }
+    @Override @NotNull public NamespacedKey getKeyOrThrow() { return key; }
+    @Override @NotNull public NamespacedKey getKeyOrThrow() { return key; }
     @Override @NotNull public String getTranslationKey() { return "enchantment.minecraft." + key.getKey(); }
     public boolean isTradeable() { return true; }
     public boolean isDiscoverable() { return true; }
     public boolean isRegistered() { return true; }
+    @Override @Nullable public org.bukkit.NamespacedKey getKeyOrNull() { return key; }
 }

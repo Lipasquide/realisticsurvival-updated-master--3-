@@ -25,8 +25,6 @@ import me.val_mobile.rsv.RSVPlugin;
 import me.val_mobile.tan.TanModule;
 import me.val_mobile.tan.TempManager;
 import me.val_mobile.tan.ThirstManager;
-import net.md_5.bungee.api.ChatMessageType;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -97,11 +95,9 @@ public class DisplayTask extends BukkitRunnable implements RSVTask {
                     actionbarText += characterValues.getTemperatureThirstActionbar(player, (int) Math.round(temperature), (int) Math.round(thirst), isUnderwater, parasitesActive);
                 }
                 else {
-                    // only temperature is enabled
                     if (tempManager.isTempEnabled(player)) {
                         actionbarText += characterValues.getTemperatureOnlyActionbar(player, (int) Math.round(temperature));
                     }
-                    // only thirst is enabled
                     else {
                         actionbarText += characterValues.getThirstOnlyActionbar(player, (int) Math.round(thirst), isUnderwater, parasitesActive);
                     }
@@ -137,7 +133,7 @@ public class DisplayTask extends BukkitRunnable implements RSVTask {
             }
 
             if (!actionbarText.isEmpty()) {
-                player.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(Utils.translateMsg(actionbarText, player, null)));
+                player.sendActionBar(Utils.translateMsg(actionbarText, player, null));
             }
 
             if (!titleText.isEmpty()) {
@@ -156,7 +152,7 @@ public class DisplayTask extends BukkitRunnable implements RSVTask {
 
     @Override
     public void start() {
-        int tickPeriod = tanConfig.getInt("VisualTickPeriod"); // get the tick period
+        int tickPeriod = tanConfig.getInt("VisualTickPeriod");
         this.runTaskTimer(plugin, 0L, tickPeriod);
     }
 

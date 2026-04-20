@@ -962,7 +962,7 @@ public class BaubleEvents extends ModuleEvents implements Listener {
 
     @EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
     public void onRegenerate(EntityRegainHealthEvent event) {
-        if (!(event.getEntity() instanceof Player player && shouldEventBeRan(player) && RSVPlayer.isValidPlayer(player) && player.getHealth() + event.getAmount() >= player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue()))
+        if (!(event.getEntity() instanceof Player player && shouldEventBeRan(player) && RSVPlayer.isValidPlayer(player) && player.getHealth() + event.getAmount() >= player.getAttribute(Attribute.MAX_HEALTH).getValue()))
             return;
 
         UUID id = player.getUniqueId();
