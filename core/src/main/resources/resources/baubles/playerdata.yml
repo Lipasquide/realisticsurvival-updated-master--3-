@@ -1,0 +1,8 @@
+#######################################
+#          Player Data                #
+#######################################
+
+# Stores player data using UUIDs, do NOT edit
+
+ConfigId: "1.2.10-RELEASE" # Used for config syncing purposes, do NOT edit
+

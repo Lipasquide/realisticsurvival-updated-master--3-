@@ -1,0 +1,156 @@
+main: me.val_mobile.rsv.RSVPlugin
+name: ${project.parent.name}
+version: ${project.parent.version}
+author: Val_Mobile
+description: ${project.parent.description}
+website: ${project.parent.url}
+api-version: 1.17
+softdepend: [PlaceholderAPI, RealisticSeasons, WorldGuard]
+load: STARTUP
+
+commands:
+  RealisticSurvival:
+    description: The home command of the Realistic Survival plugin
+    usage: /realisticsurvival
+    aliases: [rsv]
+    permission: realisticsurvival.command.*
+
+permissions:
+  realisticsurvival.iceandfire.resistance.sirenvisual:
+    description: Prevents the player's screen from changing due to sirens
+    default: false
+  realisticsurvival.iceandfire.resistance.*:
+    description: Wildcard permission
+    default: false
+    children:
+      realisticsurvival.iceandfire.resistance.sirenvisual: true
+  realisticsurvival.toughasnails.resistance.cold.*:
+    description: Prevents the player from getting cold
+    default: false
+    children:
+      realisticsurvival.toughasnails.resistance.cold.damage: true
+      realisticsurvival.toughasnails.resistance.cold.potioneffects: true
+      realisticsurvival.toughasnails.resistance.cold.visual: true
+      realisticsurvival.toughasnails.resistance.cold.breath: true
+  realisticsurvival.toughasnails.resistance.cold.damage:
+    description: Prevents the player from taking damage due to hypothermia
+    default: false
+  realisticsurvival.toughasnails.resistance.cold.potioneffects:
+    description: Prevents the player from receiving status effects due to hypothermia
+    default: false
+  realisticsurvival.toughasnails.resistance.cold.visual:
+    description: Prevents the player's screen from freezing due to hypothermia
+    default: false
+  realisticsurvival.toughasnails.resistance.cold.breath:
+    description: Prevents the player from breathing out cold air
+    default: false
+  realisticsurvival.toughasnails.resistance.hot.*:
+    description: Prevents the player from getting hot
+    default: false
+    children:
+      realisticsurvival.toughasnails.resistance.hot.sweat: true
+      realisticsurvival.toughasnails.resistance.hot.damage: true
+      realisticsurvival.toughasnails.resistance.hot.combustion: true
+      realisticsurvival.toughasnails.resistance.hot.potioneffects: true
+      realisticsurvival.toughasnails.resistance.hot.visual: true
+  realisticsurvival.toughasnails.resistance.hot.sweat:
+    description: Prevents the player from sweating
+    default: false
+  realisticsurvival.toughasnails.resistance.hot.damage:
+    description: Prevents the player from taking damage due to hyperthermia
+    default: false
+  realisticsurvival.toughasnails.resistance.hot.combustion:
+    description: Prevents the player from being ignited due to hyperthermia
+    default: false
+  realisticsurvival.toughasnails.resistance.hot.potioneffects:
+    description: Prevents the player from receiving status effects due to hyperthermia
+    default: false
+  realisticsurvival.toughasnails.resistance.hot.visual:
+    description: Prevents the player's screen from burning due to hypothermia
+    default: false
+  realisticsurvival.toughasnails.resistance.thirst.*:
+    description: Prevents the player from getting hot
+    default: false
+    children:
+      realisticsurvival.toughasnails.resistance.thirst.damage: true
+      realisticsurvival.toughasnails.resistance.thirst.potioneffects: true
+      realisticsurvival.toughasnails.resistance.thirst.visual: true
+  realisticsurvival.toughasnails.resistance.thirst:
+    description: Prevents the player from getting thirsty
+    default: false
+  realisticsurvival.toughasnails.resistance.thirst.damage:
+    description: Prevents the player from taking damage due to dehydration
+    default: false
+  realisticsurvival.toughasnails.resistance.thirst.potioneffects:
+    description: Prevents the player from receiving status effects due to dehydration
+    default: false
+  realisticsurvival.toughasnails.resistance.thirst.visual:
+    description: Prevents the player's screen from changing due to dehydration
+    default: false
+  realisticsurvival.toughasnails.resistance.parasite.*:
+    description: Prevents the player from getting hot
+    default: false
+    children:
+      realisticsurvival.toughasnails.resistance.parasite.damage: true
+      realisticsurvival.toughasnails.resistance.parasite.potioneffects: true
+  realisticsurvival.toughasnails.resistance.parasite:
+    description: Prevents the player from getting parasites
+    default: false
+  realisticsurvival.toughasnails.resistance.parasite.damage:
+    description: Prevents the player from taking damage from parasites
+    default: false
+  realisticsurvival.toughasnails.resistance.parasite.potioneffects:
+    description: Prevents the player from receiving status effects due to parasites
+    default: false
+  realisticsurvival.toughasnails.resistance.*:
+    description: Wildcard permission
+    default: false
+    children:
+      realisticsurvival.toughasnails.resistance.cold.*: true
+      realisticsurvival.toughasnails.resistance.hot.*: true
+      realisticsurvival.toughasnails.resistance.thirst.*: true
+      realisticsurvival.toughasnails.resistance.parasite.*: true
+  realisticsurvival.command.give:
+    description: Allows users to give themselves items from the plugin
+    default: op
+  realisticsurvival.command.spawnitem:
+    description: Allows users to spawn items from the plugin
+    default: op
+  realisticsurvival.command.summon:
+    description: Allows users to spawn mobs from the plugin
+    default: op
+  realisticsurvival.command.reload:
+    description: Allows users to reload the plugin
+    default: op
+  realisticsurvival.command.thirst:
+    description: Allows users to change the thirst of other players
+    default: op
+  realisticsurvival.command.temperature:
+    description: Allows users to change the temperature of other players
+    default: op
+  realisticsurvival.command.resetitem:
+    description: Allows users to reset their item to use in recipes
+    default: op
+  realisticsurvival.command.updateitem:
+    description: Allows users to update their item
+    default: op
+  realisticsurvival.command.help:
+    description: Allows users to access the help command
+    default: op
+  realisticsurvival.command.version:
+    description: Allows users to access the plugin version
+    default: op
+  realisticsurvival.command.*:
+    description: Wildcard permission
+    default: op
+    children:
+      realisticsurvival.command.give: true
+      realisticsurvival.command.spawnitem: true
+      realisticsurvival.command.summon: true
+      realisticsurvival.command.reload: true
+      realisticsurvival.command.thirst: true
+      realisticsurvival.command.temperature: true
+      realisticsurvival.command.resetitem: true
+      realisticsurvival.command.updateitem: true
+      realisticsurvival.command.help: true
+      realisticsurvival.command.version: true

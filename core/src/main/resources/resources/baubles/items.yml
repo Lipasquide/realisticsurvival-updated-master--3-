@@ -1,0 +1,768 @@
+#######################################
+#          Baubles Items              #
+#######################################
+
+ConfigId: "1.2.10-RELEASE" # Used for config syncing purposes, do NOT edit
+
+# Edit carefully, following the guide: https://github.com/ValMobile/RealisticSurvival/wiki/Editing-Item-YML-Files
+
+dragons_eye:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fDragon's Eye"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Night Vision On"
+    - "&7Current Target: None"
+    - ""
+    - "&6Bauble (Head)"
+  NBTTags:
+    rsvbaubleslot: "Head"
+poison_stone:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPoison Stone"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+potion_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring"
+  CustomModelData: 83690
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_resistance:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Resistance"
+  CustomModelData: 83652
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_regeneration:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Regeneration"
+  CustomModelData: 83653
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_haste:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Haste"
+  CustomModelData: 83654
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_strength:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Strength"
+  CustomModelData: 83655
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_speed:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Speed"
+  CustomModelData: 83656
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+potion_ring_jump_boost:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPotion Ring of Jump Boost"
+  CustomModelData: 83657
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+ender_queens_crown:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bEnder Queen's Crown"
+  CustomModelData: 83661
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Head)"
+  NBTTags:
+    rsvbaubleslot: "Head"
+sunglasses:
+  Material: "LEATHER_HELMET"
+  DisplayName: "&fSunglasses"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to blindness."
+    - "&aCool guys don't look at explosions."
+    - ""
+    - "&6Bauble (Head)"
+  NBTTags:
+    rsvbaubleslot: "Head"
+balloon:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBalloon"
+  CustomModelData: 83662
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Increases jump height and negates some fall damage."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+cobalt_shield:
+  Material: "SHIELD"
+  DisplayName: "&fCobalt Shield"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to knockback when held or equipped in bauble slot."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+obsidian_skull:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fObsidian Skull"
+  CustomModelData: 83663
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to burning and 50% resistance to fire damage. (Does not."
+    - "&9protect against lava)"
+    - "&aHolding this makes you feel vaguely nervous."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+obsidian_shield:
+  Material: "SHIELD"
+  DisplayName: "&fObsidian Shield"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants partial fire resistance and immunity to knockback when held or equipped"
+    - "&9in bauble slot"
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+forbidden_fruit:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fForbidden Fruit"
+  CustomModelData: 83664
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to hunger status effect, and nausea."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+vitamins:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fVitamins"
+  CustomModelData: 83665
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to weakness and mining fatigue."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ring_overclocking:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fRing of Overclocking"
+  CustomModelData: 83666
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to slowness and +7% move speed."
+    - "&aEveryone knows that blue LEDs make your PC run faster."
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+shulker_heart:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fShulker Heart"
+  CustomModelData: 83667
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to levitation"
+    - "&aIt's squishy..."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ring_free_action:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fRing of Free Action"
+  CustomModelData: 83668
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to slowness and levitation and allows free movement through"
+    - "&9cobwebs"
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+bezoar:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBezoar"
+  CustomModelData: 83669
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to poison."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ender_dragonscale:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fEnder Dragon Scale"
+  CustomModelData: 83670
+  ItemModel: "DEFAULT"
+cracked_black_dragonscale:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fCracked Black Dragon Scale"
+  CustomModelData: 83671
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&aBlack dragon scales are said to protect against withering. Perhaps this broken one"
+    - "&acould be repaired?"
+black_dragonscale_bauble:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBlack Dragon Scale"
+  CustomModelData: 83672
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to withering."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+mixed_color_dragonscale:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fMixed Color Dragon Scale"
+  CustomModelData: 83673
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to poison and withering."
+    - "&aInterestingly, the bezoar has fused with the scale and made it appear to"
+    - "&abe two different colors."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ankh_charm:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fAnkh Charm"
+  CustomModelData: 83674
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants immunity to most negative status effects."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ankh_shield:
+  Material: "SHIELD"
+  DisplayName: "&fAnkh Shield"
+  CustomModelData: 83652
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Grants partial fire resistance and immunity to knockback and most negative"
+    - "&9status effects when held or equipped in bauble slot."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+iron_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fIron Ring"
+  CustomModelData: 83675
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Crafting component"
+magic_mirror:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fMagic Mirror"
+  CustomModelData: 83676
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Teleports you to your spawn point."
+    - "&aIt may bend space at will, but it can't make ugly things beautiful,"
+    - "&aunfortunately for you."
+recall_potion:
+  Material: "POTION"
+  DisplayName: "&fRecall Potion"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Teleports you to your spawn point."
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+wormhole_mirror:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fWormhole Mirror"
+  CustomModelData: 83677
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Right click to teleport to your spawn point."
+    - "&9Right click while sneaking to teleport to another player."
+    - "&aYou can feel the void staring back at you."
+wormhole_potion:
+  Material: "POTION"
+  DisplayName: "&fWormhole Potion"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Teleports you to other players."
+    - "&aYou suddenly feel very alone."
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+lucky_horseshoe:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fLucky Horseshoe"
+  CustomModelData: 83678
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Negates fall damage."
+    - "&aWhy did the horse need this?"
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+scarlite_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fScarlite Ring"
+  CustomModelData: 83679
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Slowly restores health"
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+spectral_silt:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fSpectral Silt"
+  CustomModelData: 83680
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+  Lore:
+    - "&9Crafting component"
+disintegration_tablet:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fDisintegration Tablet"
+  CustomModelData: 83681
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Craft with dungeon loot to convert it into spectral silt"
+broken_heart:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBroken Heart"
+  CustomModelData: 83739
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Durability: 3/3"
+    - "&9Lethal damage destroys empty heart containers instead."
+    - "&9Sleep to regenerate heart containers."
+    - "&aHow did this happen?"
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvdurability: 3
+    rsvmaxdurability: 3
+    rsvbaubleslot: "Any"
+cross_necklace:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fCross Necklace"
+  CustomModelData: 83682
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Increases length of invicibility when damaged."
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+wrath_pendant:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fWrath Pendant"
+  CustomModelData: 83683
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Gives extra damage."
+    - "&9Grants sinful buff (+damage, +armor) after you deal a critical hit."
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+pride_pendant:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPride Pendant"
+  CustomModelData: 83684
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Gives sinful buff (+damage, +armor) while at full health."
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+gluttony_pendant:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fGluttony Pendant"
+  CustomModelData: 83685
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Gives sinful buff (+damage, +armor) while you eat."
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+sin_pendant:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fSin Pendant"
+  CustomModelData: 83686
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Crafting Component."
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+golden_crown:
+  Material: "GOLDEN_HELMET"
+  DisplayName: "&fGolden Crown"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  NBTTags:
+    rsvdurability: 275
+    rsvmaxdurability: 275
+flare_gun:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fFlare Gun"
+  CustomModelData: 83687
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Exactly what it sounds like"
+    - "&aShine a light on the situation!"
+    - "&7Durability: 384/384"
+  NBTTags:
+    rsvdurability: 384
+    rsvmaxdurability: 384
+flare:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fFlare"
+  CustomModelData: 83688
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&9Ammo for the Flare Gun."
+phytoprostasia_amulet:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPhytoprostasia Amulet"
+  CustomModelData: 83689
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Protects from cactus and berry bush damage"
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+emerald_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fEmerald Ring"
+  CustomModelData: 83691
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+emerald_amulet:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fEmerald Amulet"
+  CustomModelData: 83692
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+glowing_ingot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fGlowing Ingot"
+  CustomModelData: 83693
+  ItemModel: "DEFAULT"
+glowing_powder:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fGlowing Powder"
+  CustomModelData: 83694
+  ItemModel: "DEFAULT"
+glowing_gem:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fGlowing Gem"
+  CustomModelData: 83695
+  ItemModel: "DEFAULT"
+dwarf_stout:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fDwarf Stout"
+  CustomModelData: 83696
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7I might be able to remove the effects"
+    - "&7by drinking some sort of potion"
+fairy_dew:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fFairy Dew"
+  CustomModelData: 83697
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7I might be able to remove the effects"
+    - "&7by drinking some sort of potion"
+stone_negative_gravity:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bStone of Negative Gravity"
+  CustomModelData: 83698
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+stone_inertia_null:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bStone of Inertia Null"
+  CustomModelData: 83699
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+stone_greater_inertia:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bStone of Greater Inertia"
+  CustomModelData: 83700
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+ring_enchanted_eyes:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bRing of Enchanted Eyes"
+  CustomModelData: 83701
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+stone_sea:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bStone of the Sea"
+  CustomModelData: 83702
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+polarized_stone:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bPolarized Stone"
+  CustomModelData: 83703
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Magnetization On"
+    - "&6Repell Off"
+    - ""
+    - "&6Bauble (Amulet)"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+ring_fairies:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bRing of the Fairies"
+  CustomModelData: 83704
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+ring_dwarves:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bRing of the Dwarves"
+  CustomModelData: 83705
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+wither_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bWither Ring"
+  CustomModelData: 83706
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+shield_honor:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bShield of Honor"
+  CustomModelData: 83707
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Body)"
+  NBTTags:
+    rsvbaubleslot: "Body"
+miners_ring:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&bMiner's Ring"
+  CustomModelData: 83708
+  ItemModel: "DEFAULT"
+  Lore:
+    - ""
+    - "&6Bauble (Ring)"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+warped_scroll:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fWarped Scroll"
+  CustomModelData: 83709
+  ItemModel: "DEFAULT"
+bound_scroll:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBound Scroll"
+  CustomModelData: 83713
+  ItemModel: "DEFAULT"
+return_scroll:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fReturn Scroll"
+  CustomModelData: 83714
+  ItemModel: "DEFAULT"
+body_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83718
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Body"
+charm_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83719
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Charm"
+belt_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83720
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Belt"
+ring_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83721
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Ring"
+head_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83722
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Head"
+amulet_slot:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&7"
+  CustomModelData: 83723
+  ItemModel: "DEFAULT"
+  NBTTags:
+    rsvbaubleslot: "Amulet"
+phantom_prism:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fPhantom Prism"
+  CustomModelData: 83724
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Toggles visibility of some armor."
+    - ""
+    - "&6Bauble (Any)"
+  NBTTags:
+    rsvbaubleslot: "Any"
+gui_glass:
+  Material: "GRAY_STAINED_GLASS_PANE"
+  DisplayName: "&7"
+bauble_bag:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fBauble Bag"
+  CustomModelData: 83738
+  ItemModel: "DEFAULT"
+next_page:
+  Material: "GREEN_STAINED_GLASS_PANE"
+  DisplayName: "&eNext Page"
+  Lore:
+    - "&eClick to go the next page."
+back_page:
+  Material: "RED_STAINED_GLASS_PANE"
+  DisplayName: "&eBack Page"
+  Lore:
+    - "&eClick to go back."

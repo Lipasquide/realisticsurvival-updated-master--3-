@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>me.Val_Mobile</groupId>
+    <artifactId>realisticsurvival-parent</artifactId>
+    <version>1.2.10-RELEASE</version>
+    <packaging>pom</packaging>
+    <name>RealisticSurvival</name>
+    <modules>
+        <module>core</module>
+        <module>spigot_impl_1_21_R12</module>
+        <module>dist</module>
+    </modules>
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
+    </properties>
+</project>

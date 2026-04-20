@@ -1,0 +1,257 @@
+#######################################
+#          Tough as Nails Items       #
+#######################################
+
+ConfigId: "1.2.10-RELEASE" # Used for config syncing purposes, do NOT edit
+
+# Edit carefully, following the guide: https://github.com/ValMobile/RealisticSurvival/wiki/Editing-Item-YML-Files
+
+ice_cube:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fIce Cube"
+  CustomModelData: 83715
+  ItemModel: "DEFAULT"
+magma_shard:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fMagma Shard"
+  CustomModelData: 83716
+  ItemModel: "DEFAULT"
+jelled_slime:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fJelled Slime"
+  CustomModelData: 83717
+  ItemModel: "DEFAULT"
+thermometer:
+  Material: "COMPASS"
+  DisplayName: "&fThermometer"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+wool_hood:
+  Material: "LEATHER_HELMET"
+  DisplayName: "&fWool Hood"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "Tag.WOOL"
+wool_jacket:
+  Material: "LEATHER_CHESTPLATE"
+  DisplayName: "&fWool Jacket"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "Tag.WOOL"
+wool_pants:
+  Material: "LEATHER_LEGGINGS"
+  DisplayName: "&fWool Pants"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "Tag.WOOL"
+wool_boots:
+  Material: "LEATHER_BOOTS"
+  DisplayName: "&fWool Boots"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "Tag.WOOL"
+jelled_slime_helmet:
+  Material: "LEATHER_HELMET"
+  DisplayName: "&fJelled Slime Helmet"
+  CustomModelData: 83652
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "jelled_slime"
+jelled_slime_chestplate:
+  Material: "LEATHER_CHESTPLATE"
+  DisplayName: "&fJelled Slime Chestplate"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "jelled_slime"
+jelled_slime_leggings:
+  Material: "LEATHER_LEGGINGS"
+  DisplayName: "&fJelled Slime Leggings"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "jelled_slime"
+jelled_slime_boots:
+  Material: "LEATHER_BOOTS"
+  DisplayName: "&fJelled Slime Boots"
+  CustomModelData: 83651
+  ItemModel: "DEFAULT"
+  EquippableComponentModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_ATTRIBUTES"
+  Attributes:
+    UseModuleConfig: true
+  NBTTags:
+    rsvdurability: 22
+    rsvmaxdurability: 22
+  RepairIngredients: "jelled_slime"
+juice_apple:
+  Material: "POTION"
+  DisplayName: "&fApple Juice"
+  CustomModelData: 83652
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_beetroot:
+  Material: "POTION"
+  DisplayName: "&fBeetroot Juice"
+  CustomModelData: 83653
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_cactus:
+  Material: "POTION"
+  DisplayName: "&fCactus Juice"
+  CustomModelData: 83654
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_carrot:
+  Material: "POTION"
+  DisplayName: "&fCarrot Juice"
+  CustomModelData: 83655
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_chorus_fruit:
+  Material: "POTION"
+  DisplayName: "&fChorus Fruit Juice"
+  CustomModelData: 83656
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_melon_glistering:
+  Material: "POTION"
+  DisplayName: "&fGlistering Melon Juice"
+  CustomModelData: 83657
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+    - "HIDE_POTION_EFFECTS"
+juice_apple_golden:
+  Material: "POTION"
+  DisplayName: "&fGolden Apple Juice"
+  CustomModelData: 83658
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+    - "HIDE_POTION_EFFECTS"
+juice_carrot_golden:
+  Material: "POTION"
+  DisplayName: "&fGolden Carrot Juice"
+  CustomModelData: 83659
+  ItemModel: "DEFAULT"
+  Enchantments:
+    DURABILITY: 1
+  ItemFlags:
+    - "HIDE_ENCHANTS"
+    - "HIDE_POTION_EFFECTS"
+juice_melon:
+  Material: "POTION"
+  DisplayName: "&fMelon Juice"
+  CustomModelData: 83660
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+juice_pumpkin:
+  Material: "POTION"
+  DisplayName: "&fPumpkin Juice"
+  CustomModelData: 83661
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+purified_water_bottle:
+  Material: "POTION"
+  DisplayName: "&fPurified Water Bottle"
+  CustomModelData: 83662
+  ItemModel: "DEFAULT"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+charcoal_filter:
+  Material: "PRISMARINE_SHARD"
+  DisplayName: "&fCharcoal Filter"
+  CustomModelData: 83791
+  ItemModel: "DEFAULT"
+canteen_empty:
+  Material: "GLASS_BOTTLE"
+  DisplayName: "&fEmpty Canteen"
+  CustomModelData: 83650
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Drink: None"
+    - "&7Durability: 0/5"
+  NBTTags:
+    rsvdrink: "None"
+    rsvdurability: 0
+    rsvmaxdurability: 5
+canteen_filled:
+  Material: "POTION"
+  DisplayName: "&fFilled Canteen"
+  CustomModelData: 83663
+  ItemModel: "DEFAULT"
+  Lore:
+    - "&7Drink: Unpurified Water"
+    - "&7Durability: 5/5"
+  ItemFlags:
+    - "HIDE_POTION_EFFECTS"
+  NBTTags:
+    rsvdrink: "Unpurified Water"
+    rsvdurability: 5
+    rsvmaxdurability: 5

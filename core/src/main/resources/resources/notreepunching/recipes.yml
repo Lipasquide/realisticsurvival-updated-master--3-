@@ -1,0 +1,372 @@
+#######################################
+#          NoTreePunching Recipes     #
+#######################################
+
+ConfigId: "1.2.10-RELEASE" # Used for config syncing purposes, do NOT edit
+
+# Edit carefully, following the guide: https://github.com/ValMobile/RealisticSurvival/wiki/Editing-Recipe-YML-Files
+
+flint_hatchet:
+  Type: "Shaped"
+  Result:
+    Item: "flint_hatchet"
+    Amount: 1
+  Ingredients:
+    - "plant_string|flint_shard"
+    - "STICK"
+flint_knife:
+  Type: "Shaped"
+  Result:
+    Item: "flint_knife"
+    Amount: 1
+  Ingredients:
+    - "|flint_shard"
+    - "STICK"
+golden_knife:
+  Type: "Shaped"
+  Result:
+    Item: "golden_knife"
+    Amount: 1
+  Ingredients:
+    - "|GOLD_INGOT"
+    - "STICK"
+iron_knife:
+  Type: "Shaped"
+  Result:
+    Item: "iron_knife"
+    Amount: 1
+  Ingredients:
+    - "|IRON_INGOT"
+    - "STICK"
+diamond_knife:
+  Type: "Shaped"
+  Result:
+    Item: "diamond_knife"
+    Amount: 1
+  Ingredients:
+    - "|DIAMOND"
+    - "STICK"
+flint_pickaxe:
+  Type: "Shaped"
+  Result:
+    Item: "flint_pickaxe"
+    Amount: 1
+  Ingredients:
+    - "flint_shard|flint_shard|flint_shard"
+    - "|STICK"
+    - "|STICK"
+flint_shovel:
+  Type: "Shaped"
+  Result:
+    Item: "flint_shovel"
+    Amount: 1
+  Ingredients:
+    - "|flint_shard"
+    - "|STICK"
+    - "|STICK"
+flint_hoe:
+  Type: "Shaped"
+  Result:
+    Item: "flint_hoe"
+    Amount: 1
+  Ingredients:
+    - "flint_shard|flint_shard"
+    - "|STICK"
+    - "|STICK"
+cobblestone:
+  Type: "Shaped"
+  Result:
+    Item: "COBBLESTONE"
+    Amount: 1
+  Ingredients:
+    - "stone_rock|stone_rock"
+    - "stone_rock|stone_rock"
+plant_string:
+  Type: "Shaped"
+  Result:
+    Item: "plant_string"
+    Amount: 1
+  Ingredients:
+    - "plant_fiber|plant_fiber"
+    - "plant_fiber"
+golden_saw:
+  Type: "Shaped"
+  Result:
+    Item: "golden_saw"
+    Amount: 1
+  Ingredients:
+    - "||STICK"
+    - "|STICK|GOLD_INGOT"
+    - "STICK|GOLD_INGOT|"
+iron_saw:
+  Type: "Shaped"
+  Result:
+    Item: "iron_saw"
+    Amount: 1
+  Ingredients:
+    - "||STICK"
+    - "|STICK|IRON_INGOT"
+    - "STICK|IRON_INGOT|"
+diamond_saw:
+  Type: "Shaped"
+  Result:
+    Item: "diamond_saw"
+    Amount: 1
+  Ingredients:
+    - "||STICK"
+    - "|STICK|DIAMOND"
+    - "STICK|DIAMOND|"
+andesite:
+  Type: "Shaped"
+  Result:
+    Item: "ANDESITE"
+    Amount: 1
+  Ingredients:
+    - "andesite_rock|andesite_rock"
+    - "andesite_rock|andesite_rock"
+diorite:
+  Type: "Shaped"
+  Result:
+    Item: "DIORITE"
+    Amount: 1
+  Ingredients:
+    - "diorite_rock|diorite_rock"
+    - "diorite_rock|diorite_rock"
+granite:
+  Type: "Shaped"
+  Result:
+    Item: "GRANITE"
+    Amount: 1
+  Ingredients:
+    - "granite_rock|granite_rock"
+    - "granite_rock|granite_rock"
+sandstone:
+  Type: "Shaped"
+  Result:
+    Item: "SANDSTONE"
+    Amount: 1
+  Ingredients:
+    - "sandstone_rock|sandstone_rock"
+    - "sandstone_rock|sandstone_rock"
+red_sandstone:
+  Type: "Shaped"
+  Result:
+    Item: "RED_SANDSTONE"
+    Amount: 1
+  Ingredients:
+    - "red_sandstone_rock|red_sandstone_rock"
+    - "red_sandstone_rock|red_sandstone_rock"
+matchbox:
+  Type: "Shaped"
+  Result:
+    Item: "matchbox"
+    Amount: 1
+  Ingredients:
+    - "PAPER|PAPER|PAPER"
+    - "Tag.WOODEN_SLABS|Tag.WOODEN_SLABS|Tag.WOODEN_SLABS"
+fire_starter:
+  Type: "Shaped"
+  Result:
+    Item: "fire_starter"
+    Amount: 1
+  Ingredients:
+    - "STICK|STRING"
+    - "flint_shard|STICK"
+copper_axe:
+  Type: "Shaped"
+  Result:
+    Item: "copper_axe"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT"
+    - "COPPER_INGOT|STICK"
+    - "|STICK"
+copper_pickaxe:
+  Type: "Shaped"
+  Result:
+    Item: "copper_pickaxe"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+    - "|STICK"
+    - "|STICK"
+copper_shovel:
+  Type: "Shaped"
+  Result:
+    Item: "copper_shovel"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT"
+    - "STICK"
+    - "STICK"
+copper_sword:
+  Type: "Shaped"
+  Result:
+    Item: "copper_sword"
+    Amount: 1
+  Ingredients:
+    - "|COPPER_INGOT"
+    - "|COPPER_INGOT"
+    - "|STICK"
+copper_hoe:
+  Type: "Shaped"
+  Result:
+    Item: "copper_hoe"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT"
+    - "|STICK"
+    - "|STICK"
+copper_helmet:
+  Type: "Shaped"
+  Result:
+    Item: "copper_helmet"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+    - "COPPER_INGOT||COPPER_INGOT"
+copper_chestplate:
+  Type: "Shaped"
+  Result:
+    Item: "copper_chestplate"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT||COPPER_INGOT"
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+copper_leggings:
+  Type: "Shaped"
+  Result:
+    Item: "copper_leggings"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+    - "COPPER_INGOT||COPPER_INGOT"
+    - "COPPER_INGOT||COPPER_INGOT"
+copper_boots:
+  Type: "Shaped"
+  Result:
+    Item: "copper_boots"
+    Amount: 1
+  Ingredients:
+    - ""
+    - "COPPER_INGOT||COPPER_INGOT"
+    - "COPPER_INGOT||COPPER_INGOT"
+golden_mattock:
+  Type: "Shaped"
+  Result:
+    Item: "golden_mattock"
+    Amount: 1
+  Ingredients:
+    - "GOLD_INGOT|GOLD_INGOT|GOLD_INGOT"
+    - "|STICK|GOLD_INGOT"
+    - "|STICK"
+copper_mattock:
+  Type: "Shaped"
+  Result:
+    Item: "copper_mattock"
+    Amount: 1
+  Ingredients:
+    - "COPPER_INGOT|COPPER_INGOT|COPPER_INGOT"
+    - "|STICK|COPPER_INGOT"
+    - "|STICK"
+iron_mattock:
+  Type: "Shaped"
+  Result:
+    Item: "iron_mattock"
+    Amount: 1
+  Ingredients:
+    - "IRON_INGOT|IRON_INGOT|IRON_INGOT"
+    - "|STICK|IRON_INGOT"
+    - "|STICK"
+diamond_mattock:
+  Type: "Shaped"
+  Result:
+    Item: "diamond_mattock"
+    Amount: 1
+  Ingredients:
+    - "DIAMOND|DIAMOND|DIAMOND"
+    - "|STICK|DIAMOND"
+    - "|STICK"
+macuahuitl:
+  Type: "Shaped"
+  Result:
+    Item: "macuahuitl"
+    Amount: 1
+  Ingredients:
+    - "|flint_shard|STICK"
+    - "flint_shard|STICK|flint_shard"
+    - "STICK|flint_shard"
+clay_tool:
+  Type: "Shaped"
+  Result:
+    Item: "clay_tool"
+    Amount: 1
+  Ingredients:
+    - "||STICK"
+    - "|STICK|STICK"
+    - "STICK"
+clay_bucket:
+  Type: "Shaped"
+  Result:
+    Item: "clay_bucket"
+    Amount: 1
+  Ingredients:
+    - "CLAY_BALL||CLAY_BALL"
+    - "|CLAY_BALL"
+clay_flower_pot:
+  Type: "Shaped"
+  Result:
+    Item: "clay_flower_pot"
+    Amount: 1
+  Ingredients:
+    - "clay_brick||clay_brick"
+    - "|clay_brick"
+ceramic_bucket:
+  Type: "Furnace"
+  Result:
+    Item: "ceramic_bucket"
+    Amount: 1
+  Input: "clay_bucket"
+  Experience: 1.0
+  CookingTime: 160
+ceramic_bucket_0:
+  Type: "Campfire"
+  Result:
+    Item: "ceramic_bucket"
+    Amount: 1
+  Input: "clay_bucket"
+  Experience: 1.0
+  CookingTime: 160
+ceramic_flower_pot:
+  Type: "Furnace"
+  Result:
+    Item: "FLOWER_POT"
+    Amount: 1
+  Input: "clay_flower_pot"
+  Experience: 1.0
+  CookingTime: 160
+ceramic_flower_pot_0:
+  Type: "Campfire"
+  Result:
+    Item: "FLOWER_POT"
+    Amount: 1
+  Input: "clay_flower_pot"
+  Experience: 1.0
+  CookingTime: 160
+brick:
+  Type: "Furnace"
+  Result:
+    Item: "BRICK"
+    Amount: 1
+  Input: "clay_brick"
+  Experience: 1.0
+  CookingTime: 160
+brick_0:
+  Type: "Campfire"
+  Result:
+    Item: "BRICK"
+    Amount: 1
+  Input: "clay_brick"
+  Experience: 1.0
+  CookingTime: 160
